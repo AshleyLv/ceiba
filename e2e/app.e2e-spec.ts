@@ -1,14 +1,14 @@
-import { CeibaPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('ceiba App', function() {
-  let page: CeibaPage;
+describe('ceiba App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new CeibaPage();
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
